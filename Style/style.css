@@ -166,43 +166,61 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10.2rem 2.5rem 0 2.5rem;
   position: relative;
   overflow: hidden;
-  padding: 15.5rem 17rem 22rem 17rem;
+  padding: 15.5rem 10rem 22rem 15rem;
 }
 .section h2 {
   color: hsl(208, 49%, 24%);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 .content-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-image {
-  margin-top: 7.8rem;
-  margin-bottom: 4rem;
+.image {
+  top: -10%;
+  flex: 1;
   width: 100%;
-  transform: scale(1.25);
 }
-.content-text {
+.img-laptop {
+  display: none;
+}
+.section-laptop .content-wrapper {
+  float: left;
+}
+
+.section-laptop .content-text {
   text-align: center;
   width: 98%;
+  padding-left: 50%;
 }
 .content-text h3 {
   color: hsl(208, 49%, 24%);
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin-top: 4.2rem;
   line-height: 3.2rem;
 }
 .content-text p {
+  align-items: center;
   margin-top: 2.5rem;
   font-size: 1.7rem;
   color: hsl(207, 13%, 34%);
   line-height: 2.8rem;
   font-weight: 300;
+}
+.section-laptop .content-text p {
+    text-align: start;
+}
+
+.img-laptop-desktop {
+  position: absolute;
+  left: -25%;
+  top: 12%;
+  display: block;
+  padding-left: 100px;
 }
 
 @media (max-width: 768px) {
@@ -224,13 +242,44 @@ image {
   .nav-links {
     display: none;
   }
+  .image {
+  top: 0;
+  margin-top: 7.8rem;
+  width: 100%;
+}
   .section {
+    padding: 10.2rem 2.5rem 0 2.5rem;
     flex-direction: column;
   }
   .content-wrapper {
     flex-direction: column-reverse;
   }
-  .section h2 {
-  font-size: 2.6rem;
+  .section-laptop {
+    padding: 5rem 2.5rem 10rem 2.5rem;
+  }
+  .content-text {
+    text-align: center;
+    width: 98%;
+  }
+
+  .section-laptop .content-wrapper {
+    flex-direction: column;
+  }
+  .section-laptop .content-text p {
+    text-align: center;
 }
+.section-laptop .content-text {
+  text-align: center;
+  width: 98%;
+  padding-left: 0px;
+}
+  .section h2 {
+    font-size: 2.6rem;
+  }
+  .img-laptop-desktop {
+    display: none;
+  }
+  .img-laptop {
+    display: block;
+  }
 }
