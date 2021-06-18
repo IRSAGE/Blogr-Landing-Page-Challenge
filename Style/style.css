@@ -79,7 +79,7 @@ a {
 .first-btn:hover {
   background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
-  transition: all 1s ease-in-out
+  transition: all 1s ease-in-out;
 }
 
 .second-btn {
@@ -89,7 +89,7 @@ a {
 .second-btn:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(353, 100%, 62%);
-  transition: all 1s ease-in-out
+  transition: all 1s ease-in-out;
 }
 .nav-links {
   display: flex;
@@ -157,12 +157,58 @@ a {
 .btn-singup:hover {
   background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
-  transition: all 1s ease-in-out
+  transition: all 1s ease-in-out;
 }
+
+/*Boody Section*/
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10.2rem 2.5rem 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+  padding: 15.5rem 17rem 22rem 17rem;
+}
+.section h2 {
+  color: hsl(208, 49%, 24%);
+  font-size: 4rem;
+  font-weight: 600;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+image {
+  margin-top: 7.8rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  transform: scale(1.25);
+}
+.content-text {
+  text-align: center;
+  width: 98%;
+}
+.content-text h3 {
+  color: hsl(208, 49%, 24%);
+  font-size: 2.8rem;
+  margin-top: 4.2rem;
+  line-height: 3.2rem;
+}
+.content-text p {
+  margin-top: 2.5rem;
+  font-size: 1.7rem;
+  color: hsl(207, 13%, 34%);
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+
 @media (max-width: 768px) {
   .nav-text-wrapper h2 > span {
     padding-left: 50px;
-  } 
+  }
   .Header {
     background-size: 350%, 100%;
     background-position: 35% 34%, 0% 0%;
@@ -172,10 +218,19 @@ a {
     display: flex;
   }
   .buttons {
-  width: 100%;
-  margin-top: 3rem;
-}
-.nav-links{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .nav-links {
     display: none;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .content-wrapper {
+    flex-direction: column-reverse;
+  }
+  .section h2 {
+  font-size: 2.6rem;
 }
 }
