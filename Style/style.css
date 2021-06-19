@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Overpass", "sans-serif";
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -25,9 +26,7 @@ a {
   justify-content: space-between;
 }
 .Logo {
-  font-weight: 600;
-  font-family: sans-serif;
-  color: hsl(0, 0%, 100%);
+  height: 3.3rem;
 }
 
 .nav-text-wrapper {
@@ -160,7 +159,7 @@ a {
   transition: all 1s ease-in-out;
 }
 
-/*Boody Section*/
+/*First Section*/
 .section {
   display: flex;
   flex-direction: column;
@@ -168,7 +167,7 @@ a {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 15.5rem 10rem 22rem 15rem;
+  padding: 15.5rem 0rem 20rem 10rem;
 }
 .section h2 {
   color: hsl(208, 49%, 24%);
@@ -178,12 +177,25 @@ a {
 .content-wrapper {
   display: flex;
   align-items: center;
+  width: 95%;
   justify-content: space-between;
 }
+.section .content-wrapper .content-text{
+  width: 50%;
+ 
+}
+.first-section .content-wrapper{
+width: 90%;
+}
+.first-section .content-text{
+  padding-top: 4rem;
+  padding-right: 10%;
+}
 .image {
-  top: -10%;
+  top: -20
+  5;
   flex: 1;
-  width: 100%;
+  width:90%;
 }
 .img-laptop {
   display: none;
@@ -193,14 +205,16 @@ a {
 }
 
 .section-laptop .content-text {
-  text-align: center;
-  width: 98%;
-  padding-left: 50%;
+ padding-top: 0px;
+  width: 80%;
+  padding-left: 40%;
+}
+.second-h{
+  padding-top: 3rem;
 }
 .content-text h3 {
   color: hsl(208, 49%, 24%);
-  font-size: 2.5rem;
-  margin-top: 4.2rem;
+  font-size: 2rem;
   line-height: 3.2rem;
 }
 .content-text p {
@@ -208,7 +222,7 @@ a {
   margin-top: 2.5rem;
   font-size: 1.5rem;
   color: hsl(207, 13%, 34%);
-  line-height: 2.8rem;
+  line-height: 2.7rem;
   font-weight: 300;
 }
 .section-laptop .content-text p {
@@ -226,26 +240,50 @@ a {
 .second {
   background-image: url("../images/bg-pattern-circles.svg"),
     linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-  height: 628px;
+  height: 40rem;
+  background-size: 70%, 100%;
+  background-position: -48% 81%, 0% 0%;
   background-repeat: no-repeat, no-repeat;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
+  padding: 0rem 0rem 0rem 0rem;
+  
 }
-.second h3{
+.second .content-wrapper{
+  width: 35%;
+  padding-left: 52%;
+}
+.second .content-wrapper .content-text{
+  text-align: left;
+  width: 100%;
+}
+.second h3 {
   color: hsl(0, 0%, 100%);
   margin-top: 2.5rem;
   line-height: 5rem;
 }
-.second p{
+.second p {
   color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
 }
 
-
+.phones {
+  width: 100%;
+  position: relative;
+  height: 4rem;
+  z-index: 1;
+}
+.phone-image {
+  position: absolute;
+  top: -11rem;
+  left: 0;
+  width: 55rem;
+  margin-top: 98px;
+}
 
 /* Footer Section */
 
-.footer{
+.footer {
   background-color: hsl(240, 10%, 16%);
   color: hsl(240, 2%, 79%);
   display: flex;
@@ -254,26 +292,22 @@ a {
   padding: 75px 0;
   border-top-right-radius: 100px;
 }
-.footer .footer-text{
+.footer .footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.footer h4{
+.footer h4 {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
   margin-bottom: 25px;
 }
-.footer a{
+.footer a {
   color: hsl(240, 2%, 79%);
 }
 
-
 @media (max-width: 768px) {
-  .nav-text-wrapper h2 > span {
-    padding-left: 50px;
-  }
   .Header {
     background-size: 350%, 100%;
     background-position: 35% 34%, 0% 0%;
@@ -295,7 +329,7 @@ a {
     width: 100%;
   }
   .section {
-    padding: 10.2rem 2.5rem 0 2.5rem;
+    padding: 10.2rem 0rem 0 0rem;
     flex-direction: column;
   }
   .content-wrapper {
@@ -315,6 +349,10 @@ a {
   .section-laptop .content-text p {
     text-align: center;
   }
+  .section .content-wrapper .content-text{
+  width: 90%;
+ 
+}
   .section-laptop .content-text {
     text-align: center;
     width: 98%;
@@ -332,31 +370,42 @@ a {
 
   /* Second Section */
   .phones {
-    width: 100%;
-    position: relative;
-    height: 26.5rem;
-    z-index: 1;
+    height: 18.6rem;
   }
   .phone-image {
-    position: absolute;
     top: 0;
     left: 0;
-    /* width: 375px; */
-    margin-top: 98px;
+    width: 375px;
   }
   .second {
-  background-size: 128%,100%;
-  background-position: 50% -185%, 0% 0%;
+    background-size: 139%, 100%;
+    background-position: 50% -185%, 0% 0%;
+  }
+  .second .content-wrapper{
+  width: 90%;
+  padding-left: 0px;
+  
 }
-.second p{
- padding-bottom: 70px;
+.second h3 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 0rem;
+  line-height: 3rem;
+}
+  .second p {
+    padding-bottom: 0;
+  }
+.second .content-wrapper .content-text{
+  text-align: center;
+  width: 100%;
 }
 
-.footer{
-  flex-direction: column;
-  align-items: center;
-}
-.footer h4{
-   margin-top: 45px;
-}
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer h4 {
+    margin-top: 45px;
+  }
 }
