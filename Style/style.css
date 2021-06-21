@@ -138,11 +138,16 @@ a {
 .hamburger {
   display: none;
 }
+.menu-wrapper{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
 .nav-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
+  align-self:flex-end;
   gap: 3%;
 }
 .btn-login {
@@ -167,7 +172,7 @@ a {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 15.5rem 0rem 20rem 10rem;
+  padding: 9.5rem 0rem 20rem 10rem;
 }
 .section h2 {
   color: hsl(208, 49%, 24%);
@@ -180,22 +185,20 @@ a {
   width: 95%;
   justify-content: space-between;
 }
-.section .content-wrapper .content-text{
+.section .content-wrapper .content-text {
   width: 50%;
- 
 }
-.first-section .content-wrapper{
-width: 90%;
+.first-section .content-wrapper {
+  width: 90%;
 }
-.first-section .content-text{
-  padding-top: 4rem;
+.first-section .content-text {
+  padding-top: 5rem;
   padding-right: 10%;
 }
 .image {
-  top: -20
-  5;
+  top: -20;
   flex: 1;
-  width:90%;
+  width: 90%;
 }
 .img-laptop {
   display: none;
@@ -205,11 +208,11 @@ width: 90%;
 }
 
 .section-laptop .content-text {
- padding-top: 0px;
+  padding-top: 0px;
   width: 80%;
   padding-left: 40%;
 }
-.second-h{
+.second-h {
   padding-top: 3rem;
 }
 .content-text h3 {
@@ -247,13 +250,12 @@ width: 90%;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
   padding: 0rem 0rem 0rem 0rem;
-  
 }
-.second .content-wrapper{
+.second .content-wrapper {
   width: 35%;
   padding-left: 52%;
 }
-.second .content-wrapper .content-text{
+.second .content-wrapper .content-text {
   text-align: left;
   width: 100%;
 }
@@ -275,8 +277,8 @@ width: 90%;
 }
 .phone-image {
   position: absolute;
-  top: -11rem;
-  left: 0;
+  top: -9rem;
+  left: 7;
   width: 55rem;
   margin-top: 98px;
 }
@@ -311,8 +313,9 @@ width: 90%;
   .Header {
     background-size: 350%, 100%;
     background-position: 35% 34%, 0% 0%;
-    padding: 4rem 2.5rem 0 2rem;
+    padding: 3rem 2.5rem 0 2rem;
   }
+  
   .hamburger {
     display: flex;
   }
@@ -321,7 +324,89 @@ width: 90%;
     margin-top: 3rem;
   }
   .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hide-menu {
     display: none;
+  }
+  .menu-wrapper {
+    background-color: hsl(0, 0%, 100%);
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+      0px 20px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  flex:unset;
+  padding: 0px;
+  }
+  .item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-item h4 {
+    color: hsl(208, 49%, 24%);
+    font-size: 1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .nav-item h4:hover {
+    color: hsl(240, 3%, 79%);
+  }
+  .nav-item:hover .sub-items {
+    display: flex;
+  }
+  .sub-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(239, 239, 241);
+    border-radius: 5px;
+  }
+  .sub-items a {
+    display: block;
+    color: hsl(207, 13%, 34%);
+    font-size: 1rem;
+    font-weight: 600;
+    
+  }
+  .sub-items a:hover {
+    color: hsl(208, 49%, 24%);
+  }
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: unset;
+    gap: 0%;
+    color: hsl(207, 13%, 34%);
+  }
+  .btn-login{
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 0.5rem;
+  }
+  .btn-singup{
+    margin-bottom: 1rem;
   }
   .image {
     top: 0;
@@ -349,10 +434,9 @@ width: 90%;
   .section-laptop .content-text p {
     text-align: center;
   }
-  .section .content-wrapper .content-text{
-  width: 90%;
- 
-}
+  .section .content-wrapper .content-text {
+    width: 90%;
+  }
   .section-laptop .content-text {
     text-align: center;
     width: 98%;
@@ -381,24 +465,22 @@ width: 90%;
     background-size: 139%, 100%;
     background-position: 50% -185%, 0% 0%;
   }
-  .second .content-wrapper{
-  width: 90%;
-  padding-left: 0px;
-  
-}
-.second h3 {
-  color: hsl(0, 0%, 100%);
-  margin-top: 0rem;
-  line-height: 3rem;
-}
+  .second .content-wrapper {
+    width: 90%;
+    padding-left: 0px;
+  }
+  .second h3 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 0rem;
+    line-height: 3rem;
+  }
   .second p {
     padding-bottom: 0;
   }
-.second .content-wrapper .content-text{
-  text-align: center;
-  width: 100%;
-}
-
+  .second .content-wrapper .content-text {
+    text-align: center;
+    width: 100%;
+  }
 
   .footer {
     flex-direction: column;

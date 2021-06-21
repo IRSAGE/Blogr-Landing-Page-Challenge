@@ -19,11 +19,14 @@
   <section class="Header">
     <div class="nav">
       <img src="./images/logo.svg" alt="Brand Logo" class="logo">
-      <div class="nav-links">
+
+
+      <div class="nav-links hide-menu" id="menu">
         <!-- <div class="btn-close">
           <img src="./images/icon-close.svg" alt="icon-close">
         </div> -->
-        <div class="nav-links-container">
+        <div class="menu-wrapper">
+          <div class="nav-links-container">
             <div class="nav-item">
               <div class="item-heading">
                 <h4>Product</h4>
@@ -43,10 +46,10 @@
                 <img class="arrow" src="./images/icon-arrow-dark.svg" alt="icon-close">
               </div>
               <div class="sub-items">
-              <a href="#">About</a>
-              <a href="#">Team</a>
-              <a href="#">Blog</a>
-              <a href="#">Careers</a>
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
               </div>
             </div>
             <div class="nav-item">
@@ -66,17 +69,18 @@
               <div>Login</div>
             </a>
             <a class="btn btn-singup" href="#">
-              <div>Sing Up</div>
+              <div>Sign Up</div>
             </a>
           </div>
         </div>
-        <img class="hamburger" src="./images/icon-hamburger.svg" alt="hamburger Icon">
       </div>
-      
+      <img class="hamburger" id="hamburger" src="./images/icon-hamburger.svg" alt="hamburger Icon">
+    </div>
+
     </div>
 
     <div class="nav-text-wrapper">
-      <h2><span>A modern</span> publishing platform</h2>
+      <h2>A modern publishing platform</h2>
       <p>Grow your audience and build your online brand</p>
       <div class="buttons">
         <a class="btn first-btn" href="#"> Start for Free</a>
@@ -91,7 +95,7 @@
   <section class="section first-section">
     <h2>Designed for the future</h2>
     <div class="content-wrapper">
-      
+
       <div class="content-text">
         <h3><span>Introducing an</span> extensible editor</h3>
         <p>Blogr features an exceedingly intuitive interface which lets
@@ -112,30 +116,30 @@
     </div>
   </section>
 
-<!-- Second Section -->
+  <!-- Second Section -->
 
-<div class="phones">
-  <img src="./images/illustration-phones.svg" alt="Phones" class="phone-image">
-</div>
-
-<section class="section second">
-  <div class="content-wrapper">
-    <div class="content-text">
-    <h3>State of the Art Infrastructure</h3>
-      <p>
-        With reliability and speed in mind.
-        worldwide data centers privide the backbone for ultra-fast
-        connectivity. This is ensures your site wil load instantly,
-        no matter whre your readers are, keeping your site competitive.
-      </p>
-      
-    </div>
-    </div>
+  <div class="phones">
+    <img src="./images/illustration-phones.svg" alt="Phones" class="phone-image">
   </div>
-</section>
+
+  <section class="section second">
+    <div class="content-wrapper">
+      <div class="content-text">
+        <h3>State of the Art Infrastructure</h3>
+        <p>
+          With reliability and speed in mind.
+          worldwide data centers privide the backbone for ultra-fast
+          connectivity. This is ensures your site wil load instantly,
+          no matter whre your readers are, keeping your site competitive.
+        </p>
+
+      </div>
+    </div>
+    </div>
+  </section>
 
 
-<!-- Bottom Section -->
+  <!-- Bottom Section -->
   <section class="section section-laptop">
     <div class="content-wrapper">
       <img class="img-laptop" src="./images/illustration-laptop-mobile.svg" alt="mobile laptop">
@@ -158,40 +162,57 @@
       </div>
     </div>
   </section>
-<!-- Footer Section -->
+  <!-- Footer Section -->
 
-<footer class="footer">
-  <img src="./images/logo.svg" alt="Brand Logo" class="logo">
-  <div class="footer-text">
-    <h4>Product</h4>
-    <a href="#">Overview</a>
-    <a href="#">Pricing</a>
-    <a href="#">Marketplace</a>
-    <a href="#">Features</a>
-    <a href="#">Integrations</a>
-  </div>
+  <footer class="footer">
+    <img src="./images/logo.svg" alt="Brand Logo" class="logo">
+    <div class="footer-text">
+      <h4>Product</h4>
+      <a href="#">Overview</a>
+      <a href="#">Pricing</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Features</a>
+      <a href="#">Integrations</a>
+    </div>
 
-  <div class="footer-text">
-  <h4>Company</h4>
-    <a href="#">About</a>
-    <a href="#">Team</a>
-    <a href="#">Blog</a>
-    <a href="#">Careers</a>
-  </div>
+    <div class="footer-text">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Team</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
 
-  <div class="footer-text">
-    <h4>Connect</h4>
-    <a href="#">Contact</a>
-    <a href="#">Newsletter</a>
-    <a href="#">LinkedIn</a>
-  </div>
+    <div class="footer-text">
+      <h4>Connect</h4>
+      <a href="#">Contact</a>
+      <a href="#">Newsletter</a>
+      <a href="#">LinkedIn</a>
+    </div>
 
-</footer>
+  </footer>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script>
+    //const btnClose = document.querySelector('.btn-close');
+    // var menu = document.getElementById("menu");
+    // var btnHamburger = document.getElementById("hamburger");
+
+    // //btnClose.addEventListener('click', menuShow);
+    // btnHamburger.addEventListener('click', function () {
+    //   menu.classList.toggle("hide-menu")
+    // });
+    const hamBurger = document.querySelector(".hamburger");
+      hamBurger.addEventListener("click", function () {
+        document.querySelector(".nav-links").classList.toggle("hide-menu");
+      });
+
+  </script>
+
 </body>
 
 </html>
