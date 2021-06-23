@@ -21,10 +21,7 @@
       <img src="./images/logo.svg" alt="Brand Logo" class="logo">
 
 
-      <div class="nav-links hide-menu" id="menu">
-        <!-- <div class="btn-close">
-          <img src="./images/icon-close.svg" alt="icon-close">
-        </div> -->
+      <div class="nav-links" id="menu">
         <div class="menu-wrapper">
           <div class="nav-links-container">
             <div class="nav-item">
@@ -74,7 +71,12 @@
           </div>
         </div>
       </div>
+
       <img class="hamburger" id="hamburger" src="./images/icon-hamburger.svg" alt="hamburger Icon">
+
+      <div class="btn-close">
+        <img src="./images/icon-close.svg" alt="icon-close">
+      </div>
     </div>
 
     </div>
@@ -198,18 +200,25 @@
   </div> -->
 
   <script>
-    //const btnClose = document.querySelector('.btn-close');
-    // var menu = document.getElementById("menu");
-    // var btnHamburger = document.getElementById("hamburger");
 
-    // //btnClose.addEventListener('click', menuShow);
-    // btnHamburger.addEventListener('click', function () {
-    //   menu.classList.toggle("hide-menu")
-    // });
-    const hamBurger = document.querySelector(".hamburger");
-      hamBurger.addEventListener("click", function () {
-        document.querySelector(".nav-links").classList.toggle("hide-menu");
-      });
+    const btnClose = document.querySelector('.btn-close');
+    const menu = document.getElementById("menu");
+    const btnHamburger = document.getElementById("hamburger");
+
+
+    btnHamburger.addEventListener('click', function () {
+      menu.classList.toggle("hide-menu");
+      btnClose.classList.toggle("hide-menu");
+      btnHamburger.classList.remove("hide-hamburger");
+      
+    });
+
+    btnClose.addEventListener('click', function () {
+      menu.classList.toggle("hide-menu");
+      btnClose.classList.toggle("hide-menu");
+      btnHamburger.classList.add("hide-hamburger");
+     
+    });
 
   </script>
 
