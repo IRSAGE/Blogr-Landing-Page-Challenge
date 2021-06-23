@@ -163,7 +163,12 @@ a {
   color: hsl(0, 0%, 100%);
   transition: all 1s ease-in-out;
 }
-
+.btn-close {
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    width: 86%;
+  }
 /*First Section*/
 .section {
   display: flex;
@@ -332,12 +337,6 @@ a {
     align-items: center;
   }
 
-  .btn-close {
-    display: none;
-    align-items: center;
-    justify-content: flex-end;
-    width: 86%;
-  }
   .opacity-zero{
     opacity: 0;
   }
