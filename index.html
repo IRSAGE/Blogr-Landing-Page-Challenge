@@ -209,14 +209,14 @@
     btnHamburger.addEventListener('click', function () {
       menu.classList.toggle("hide-menu");
       btnClose.classList.toggle("hide-menu");
-      btnHamburger.classList.remove("hide-hamburger");
-      
+      btnHamburger.classList.add("hide-hamburger");
+      btnHamburger.classList.remove("hamburger")
     });
 
     btnClose.addEventListener('click', function () {
       menu.classList.toggle("hide-menu");
       btnClose.classList.toggle("hide-menu");
-      btnHamburger.classList.add("hide-hamburger");
+      btnHamburger.classList.remove("hide-hamburger");
      
     });
 
