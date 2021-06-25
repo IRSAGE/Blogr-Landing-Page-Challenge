@@ -315,6 +315,9 @@ a {
   color: hsl(240, 2%, 79%);
 }
 
+
+
+
 @media (max-width: 768px) {
   .Header {
     background-size: 350%, 100%;
@@ -333,7 +336,7 @@ a {
     left: 0;
     margin: 0;
     padding-left: 0;
-    width: 110%;
+    width: 100%;
     padding-top: 6rem;
     display: none;
     flex-direction: column;
@@ -524,5 +527,12 @@ a {
   }
   .footer h4 {
     margin-top: 45px;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .Header{
+    padding-right: 10px;
   }
 }
