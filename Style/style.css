@@ -448,7 +448,7 @@ a {
   }
   .nav-text-wrapper h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 45px;
   }
   .section {
     padding: 10.2rem 0rem 0 0rem;
@@ -531,8 +531,12 @@ a {
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .Header{
     padding-right: 10px;
+  }
+  .nav-text-wrapper h2 {
+    text-align: center;
+    font-size: 38px;
   }
 }
